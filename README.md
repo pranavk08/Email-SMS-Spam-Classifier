@@ -175,42 +175,8 @@ The `train_model.py` script performs the following steps:
 - **Features**: 3000 TF-IDF features
 - **Training Time**: < 1 second
 
-## 🎨 Customization
 
-### Change Background Color
 
-Edit `app.py` and modify the CSS section:
-
-```python
-# Solid color
-st.markdown("""
-    <style>
-    .stApp {
-        background-color: #3498db;  # Change this hex color
-    }
-    </style>
-    """, unsafe_allow_html=True)
-```
-
-### Popular Color Options
-
-- **Teal**: `#1abc9c`
-- **Green**: `#2ecc71`
-- **Blue**: `#3498db`
-- **Purple**: `#9b59b6`
-- **Orange**: `#e67e22`
-
-### Change Model Parameters
-
-Edit `train_model.py`:
-
-```python
-# Adjust TF-IDF features
-tfidf = TfidfVectorizer(max_features=5000)  # Increase/decrease features
-
-# Try different Naive Bayes parameters
-model = MultinomialNB(alpha=0.5)  # Adjust smoothing parameter
-```
 
 ## 🛠 Technologies Used
 
