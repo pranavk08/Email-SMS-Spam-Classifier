@@ -11,6 +11,15 @@ nltk.download('stopwords', quiet=True)
 
 ps=PorterStemmer()
 
+# Custom CSS for background color
+st.markdown("""
+    <style>
+    .stApp {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 def transform_text(text):
     text=text.lower()
     text=nltk.word_tokenize(text)
